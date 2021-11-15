@@ -4,11 +4,11 @@
   "description": "",
   "main": "app.js",
   "engines":{
-    "node":"16.13.0"
+    "node":"14x"
 
   },
   "scripts": {
-    "start": "index.js",
+    "start": "node index.js",
     "server":"nodemon index.js"
   },
   "author": "",
