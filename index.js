@@ -10,6 +10,10 @@ app.get("/test", (req, res) => {
   const message = req.body;
   return res.send(message);
 });
+
+app.get("*", function (req, res) {
+  res.sendFile(__dirname + "/index.html");
+});
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
