@@ -7,7 +7,7 @@ app.use(express.json());
 
 // app.use(express.static(path.join(__dirname)));
 
-app.get("/test", (req, res) => {
+app.post("/test", (req, res) => {
   console.log("hi");
   const message = req.body;
   return res.send(message);
